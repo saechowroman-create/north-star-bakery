@@ -24,6 +24,14 @@ HTML
     <h1>Our Daily Baked Goods</h1>
     <p>Everything we offer is made from scratch every day. Walk-in purchases are always welcome, and orders for specific items can be requested through our pre-order form.</p>
 
+    <section id="favorites-summary">
+      <h2>Your Saved Bakery Favorites (<span id="favorites-count">0</span>)</h2>
+      <ul id="favorites-items-list">
+        <li>No items saved to your favorites yet. Click "Save to Favorites" below!</li>
+      </ul>
+      <p><a href="contact.html">Proceed to Pre-Order Form &rarr;</a></p>
+    </section>
+
     <figure>
       <img src="bakery-signature-loaf.jpg" alt="Thickly sliced rustic sourdough boule showing an open airy crumb">
       <figcaption>Our Signature Heritage Sourdough: Naturally fermented for 36 hours and hearth-baked daily.</figcaption>
@@ -34,9 +42,17 @@ HTML
       <p>Crusty loaves leavened with wild yeast and baked dark on stone decks.</p>
       <img src="bakery-bread.jpg" alt="Assorted freshly baked baguettes, seeded loaves, and round sourdough boules on cooling racks">
       <ul>
-        <li><strong>Country White Sourdough:</strong> Classic tangy profile with a blistered crust ($7.50 - $9.00).</li>
-        <li><strong>Spelt & Seeded Batard:</strong> Packed with toasted flax, sunflower, and sesame seeds ($8.50 - $10.00).</li>
-        <li><strong>Traditional French Baguette:</strong> Light, crisp crust with a custardy interior ($4.00 - $5.50).</li>
+<li>
+          <strong>Country White Sourdough:</strong> Classic tangy profile with a blistered crust ($7.50 - $9.00).
+          <button type="button" class="favorite-btn" data-item-id="item-1">☆ Save to Favorites</button>
+        </li>
+        <li>
+          <strong>Spelt & Seeded Batard:</strong> Packed with toasted flax, sunflower, and sesame seeds ($8.50 - $10.00).
+          <button type="button" class="favorite-btn" data-item-id="item-2">☆ Save to Favorites</button>
+        </li>
+        <li>
+          <strong>Traditional French Baguette:</strong> Light, crisp crust with a custardy interior ($4.00 - $5.50).
+        </li>
       </ul>
     </section>
 
@@ -44,9 +60,17 @@ HTML
       <h2>Morning Pastries</h2>
       <p>Laminated dough rolled with European butter and seasonal local fruits.</p>
       <ul>
-        <li><strong>Classic Butter Croissant:</strong> Flaky, light, and golden ($4.00 - $4.75).</li>
-        <li><strong>Dark Chocolate Pain au Chocolat:</strong> Folded with two batons of bittersweet chocolate ($4.75 - $5.50).</li>
-        <li><strong>Cardamom Morning Buns:</strong> Sugared brioche dough scented with freshly crushed cardamom ($4.50 - $5.00).</li>
+<li>
+          <strong>Classic Butter Croissant:</strong> Flaky, light, and golden ($4.00 - $4.75).
+          <button type="button" class="favorite-btn" data-item-id="item-3">☆ Save to Favorites</button>
+        </li>
+        <li>
+          <strong>Dark Chocolate Pain au Chocolat:</strong> Folded with two batons of bittersweet chocolate ($4.75 - $5.50).
+          <button type="button" class="favorite-btn" data-item-id="item-4">☆ Save to Favorites</button>
+        </li>
+        <li>
+          <strong>Cardamom Morning Buns:</strong> Sugared brioche dough scented with freshly crushed cardamom ($4.50 - $5.00).
+        </li>
       </ul>
     </section>
 
@@ -54,8 +78,13 @@ HTML
       <h2>Cakes & Seasonal Tarts</h2>
       <p>Single-tier celebration cakes and fruit tarts for family gatherings and weekend events.</p>
       <ul>
-        <li><strong>Carrot & Walnut Layer Cake:</strong> Spiced sponge finished with whipped cream cheese frosting ($32.00 - $45.00).</li>
-        <li><strong>Brown Butter Lemon Tart:</strong> Sweet pastry crust filled with bright citrus curd ($28.00 - $36.00).</li>
+<li>
+          <strong>Carrot & Walnut Layer Cake:</strong> Spiced sponge finished with whipped cream cheese frosting ($32.00 - $45.00).
+          <button type="button" class="favorite-btn" data-item-id="item-5">☆ Save to Favorites</button>
+        </li>
+        <li>
+          <strong>Brown Butter Lemon Tart:</strong> Sweet pastry crust filled with bright citrus curd ($28.00 - $36.00).
+        </li>
       </ul>
     </section>
   </main>
