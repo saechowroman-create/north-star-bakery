@@ -32,37 +32,41 @@
 
     <section>
       <h2>Send an Inquiry or Pre-Order</h2>
-<form id="bakery-form" action="javascript:void(0);" novalidate>
-  <fieldset>
-    <legend>Customer Information</legend>
+<section>
+      <h2>Place a Pre-Order or Inquiry</h2>
+      <p>Please allow at least 48 hours notice for whole cake orders and large pastry boxes.</p>
 
-    <div>
-      <label for="full-name">Full Name (Required)</label>
-      <input type="text" id="full-name" name="full_name">
-    </div>
+      <form id="bakery-form" action="javascript:void(0);" novalidate>
+        <fieldset>
+          <legend>Customer Information</legend>
 
-    <div>
-      <label for="email-address">Email Address (Required)</label>
-      <input type="email" id="email-address" name="email_address">
-    </div>
-  </fieldset>
+          <div class="form-group">
+            <label for="full-name">Full Name (Required)</label>
+            <input type="text" id="full-name" name="full_name">
+          </div>
 
-  <fieldset>
-    <legend>Order Details</legend>
+          <div class="form-group">
+            <label for="email-address">Email Address (Required)</label>
+            <input type="email" id="email-address" name="email_address">
+          </div>
+        </fieldset>
 
-    <div>
-      <label for="pickup-date">Requested Pickup Date (Required)</label>
-      <input type="date" id="pickup-date" name="pickup_date">
-    </div>
+        <fieldset>
+          <legend>Order Details</legend>
 
-    <div>
-      <label for="item-details">Order Details & Special Requests</label>
-      <textarea id="item-details" name="item_details" rows="4"></textarea>
-    </div>
-  </fieldset>
+          <div class="form-group">
+            <label for="pickup-date">Requested Pickup Date (Required)</label>
+            <input type="date" id="pickup-date" name="pickup_date">
+          </div>
 
-  <button type="submit" id="submit-btn">Submit Pre-Order Request</button>
-</form>
+          <div class="form-group">
+            <label for="item-details">Order Details & Special Requests</label>
+            <textarea id="item-details" name="item_details" rows="4"></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" id="submit-btn">Submit Pre-Order Request</button>
+      </form>
     </section>
   </main>
 
