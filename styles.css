@@ -1,0 +1,264 @@
+/* ==========================================================================
+   North Star Bakery - Global Stylesheet (Mobile-First)
+   Color Palette:
+     - Cream (#FFF8F0): Page background & high-contrast text on dark backgrounds
+     - Earth Brown (#6B3E26): Brand headers, borders, and footer
+     - Terracotta Peach (#D88C5A): Accent lines, button states, active elements
+     - Deep Charcoal (#2F2A26): High-legibility body text
+   Typography:
+     - Headings: Georgia, 'Times New Roman', serif
+     - Body & Forms: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+   ========================================================================== */
+
+/* Universal Box Sizing & Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2F2A26;
+  background-color: #FFF8F0;
+}
+
+/* Header & Mobile-First Navigation */
+header {
+  background-color: #6B3E26;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img {
+  max-width: 140px;
+  height: auto;
+  display: block;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF8F0;
+  background-color: #532F1D;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #D88C5A;
+  color: #2F2A26;
+}
+
+/* Main Content Container */
+main {
+  padding: 1.5rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Headings & Text Hierarchy */
+h1, h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #6B3E26;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 1.85rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #D88C5A;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.45rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Media, Figure & Video Styling */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+figure {
+  margin: 1.5rem 0;
+  background-color: #FFFFFF;
+  padding: 0.75rem;
+  border: 1px solid #E5DACF;
+  border-radius: 6px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #6B3E26;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Content Sections */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Form Styles */
+form {
+  background-color: #FFFFFF;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #E5DACF;
+}
+
+fieldset {
+  border: 2px solid #D88C5A;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+legend {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  color: #6B3E26;
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: #2F2A26;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #6B3E26;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #FFF8F0;
+  color: #2F2A26;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #D88C5A;
+  background-color: #FFFFFF;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  background-color: #D88C5A;
+  color: #2F2A26;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #6B3E26;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #6B3E26;
+  color: #FFF8F0;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #6B3E26;
+  color: #FFF8F0;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   Responsive Tablet & Desktop Breakpoint (min-width: 768px)
+   ========================================================================== */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  nav {
+    width: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  nav a {
+    background-color: transparent;
+    padding: 0.5rem 0.75rem;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background-color: #D88C5A;
+    color: #2F2A26;
+  }
+
+  main {
+    padding: 2.5rem 2rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
