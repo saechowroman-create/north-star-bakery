@@ -32,16 +32,16 @@
 
     <section>
       <h2>Send an Inquiry or Pre-Order</h2>
-<form id="bakery-form" action="#" method="get" novalidate>
+<form id="bakery-form" action="javascript:void(0);" novalidate>
   <fieldset>
     <legend>Customer Information</legend>
 
-    <div class="form-group">
+    <div>
       <label for="full-name">Full Name (Required)</label>
       <input type="text" id="full-name" name="full_name">
     </div>
 
-    <div class="form-group">
+    <div>
       <label for="email-address">Email Address (Required)</label>
       <input type="email" id="email-address" name="email_address">
     </div>
@@ -50,18 +50,18 @@
   <fieldset>
     <legend>Order Details</legend>
 
-    <div class="form-group">
+    <div>
       <label for="pickup-date">Requested Pickup Date (Required)</label>
       <input type="date" id="pickup-date" name="pickup_date">
     </div>
 
-    <div class="form-group">
+    <div>
       <label for="item-details">Order Details & Special Requests</label>
       <textarea id="item-details" name="item_details" rows="4"></textarea>
     </div>
   </fieldset>
 
-  <button type="submit">Submit Pre-Order Request</button>
+  <button type="submit" id="submit-btn">Submit Pre-Order Request</button>
 </form>
     </section>
   </main>
